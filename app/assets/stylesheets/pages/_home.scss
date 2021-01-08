@@ -1,1 +1,34 @@
 // Specific CSS for your home-page
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  flex-direction: column;
+  min-height: 100vh;
+}
+// -------banner-------------------
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://images.pexels.com/photos/4386489/pexels-photo-4386489.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  height: 90vh;
+  text-align: center;
+  width: 100%;
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    h2 {
+      color: white;
+    }
+  }
+}

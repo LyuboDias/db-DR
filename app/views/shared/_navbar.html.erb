@@ -1,0 +1,32 @@
+   <div class="navbar">
+   <%# ------navbar left links------------------- %>
+     <div class="navbar-links-left">
+       <ul>
+         <li class="links">
+           <p> <a href="#"> About</a></p>
+         </li>
+         <li class="links">
+           <p> <a href="#"> Publications</a></p>
+         </li>
+       </ul>
+     </div>
+   <%# ------navbar logo-------------------- %>
+      <div class="logo-container">
+        <%= link_to root_path do %>
+        <%= image_tag "dr-logo.png", class: "nav-logo" %>
+        <% end %>
+      </div>
+
+
+ <%# -------navbra right links------------------- %>
+     <div class="navbar-links-right">
+       <ul>
+         <li class="links">
+           <p> <a href="#">Blog</a></p>
+         </li>
+         <li class="links">
+           <p> <a href="#"> Contacts</a></p>
+         </li>
+       </ul>
+     </div>
+   </div>
