@@ -1,32 +1,17 @@
-   <div class="navbar">
-   <%# ------navbar left links------------------- %>
-     <div class="navbar-links-left">
-       <ul>
-         <li class="links">
-           <p> <a href="#"> About</a></p>
-         </li>
-         <li class="links">
-           <p> <a href="#"> Publications</a></p>
-         </li>
-       </ul>
-     </div>
-   <%# ------navbar logo-------------------- %>
-      <div class="logo-container">
-        <%= link_to root_path do %>
-        <%= image_tag "dr-logo.png", class: "nav-logo" %>
-        <% end %>
-      </div>
-
-
- <%# -------navbra right links------------------- %>
-     <div class="navbar-links-right">
-       <ul>
-         <li class="links">
-           <p> <a href="#">Blog</a></p>
-         </li>
-         <li class="links">
-           <p> <a href="#"> Contacts</a></p>
-         </li>
-       </ul>
-     </div>
-   </div>
+<nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg  navbar-expand-xl navbar-light bg-light justify-content-between" >
+<%# ------navbar logo-------------------- %>
+  <div class="logo-container">
+    <%= link_to root_path do %>
+    <%= image_tag "logo2.png", class: "nav-logo" %>
+    <% end %>
+  </div> 
+  <%# ------ navbar links------- %>
+  <div  id="navbarNavAltMarkup">
+    <div class="navbar-nav ">
+      <%= link_to "About", about_path, class: "nav-item nav-link h5" %>
+      <a class="nav-item nav-link h5" href="#">Classes</a>
+      <%# <a class="nav-item nav-link" href="#">Contacts</a> %>
+      <%= link_to "Contacts", contacts_path, class: "nav-item nav-link h5" %>
+    </div>
+  </div>
+</nav>

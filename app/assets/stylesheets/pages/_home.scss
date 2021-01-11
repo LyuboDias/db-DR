@@ -8,11 +8,11 @@ body {
   scroll-behavior: smooth;
   flex-direction: column;
   min-height: 100vh;
+  background-color: white;
 }
 // -------banner-------------------
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url("https://images.pexels.com/photos/4386489/pexels-photo-4386489.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("chat-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,14 +21,45 @@ body {
   height: 90vh;
   text-align: center;
   width: 100%;
+
   .banner-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 90vh;
-    h2 {
-      color: white;
-    }
+  }
+}
+.second-backgr {
+  background-color: $second-color;
+}
+// ----image div-------
+.image-div {
+  height: 50vh;
+  background-image: url("circle-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+  // position: relative;
+  background-attachment: fixed;
+}
+// -----about--banner-------------------
+.about-banner {
+  background-image: url("hexa-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  height: 90vh;
+  text-align: center;
+  width: 100%;
+
+  .about-banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
   }
 }
