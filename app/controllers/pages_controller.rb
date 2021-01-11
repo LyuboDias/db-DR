@@ -8,7 +8,12 @@ class PagesController < ApplicationController
   def policy
   end
   
-
-
+  def contacts 
+  end
+  
+  def about
+    
+  end
+  
 
 end
