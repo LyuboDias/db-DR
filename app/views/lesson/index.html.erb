@@ -1,0 +1,29 @@
+<div class="container ">
+  <br>
+  <br>
+  <h1 class="text-center">Here are our Lessons</h1>
+  <br>
+  <h3 class="text-center">Lessons</h3>
+  <br>
+  <section >
+    <% @lesson.each do |s| %>
+        <div class="container">
+          <%# <div class=""> %>
+            <%# <%= cl_image_tag s.image.key %> 
+          <%# </div> %>
+          <div class=" p-5">
+            <%= link_to lesson_path(s) do %>
+              <h2><%= s.title %></h2>
+            <% end %>
+            <p><%= s.briefdescription %></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga vel ipsam quaerat nam rem distinctio consequuntur. Rerum, doloremque id?</p>
+            <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-75" %>
+          </div>
+        </div>
+    <% end %>
+  </section>
+  <br>
+  <%= link_to 'Home', root_path, class: "btn btn-lg btn-warning" %>
+  <br>
+  <br>
+</div> 

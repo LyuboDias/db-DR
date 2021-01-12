@@ -1,0 +1,25 @@
+<div class="container mt-5 mb-5">
+  <br>
+  <br>
+  <div class="container">
+    <div class="rows ">
+      <%# <div>
+        <%# <%= cl_image_tag @lesson.image.key, class: "" %> 
+      <%# </div> %> 
+      <div class="container">
+        <h2 class="text-center"> <%= @lesson.title %> </h2>
+        <h3 class="text-center"><%= @lesson.subtitle %></h3>
+        <br>
+        <p > <%= @lesson.briefdescription %></p>
+        <br>
+        <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-75" %>
+        <br>
+        <br>
+        <h5> <%= @lesson.content %> </h5>
+        <br>
+        <%# <p><%= s.link %></p> 
+      </div>
+    </div>
+  </div>
+  <%= link_to 'Back', lesson_index_path, class: "btn  btn-warning" %>
+</div>
