@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg  navbar-expand-xl navbar-light bg-light justify-content-between" >
+<nav class="navbar  navbar-expand-sm navbar-expand-md navbar-expand-lg  navbar-expand-xl  justify-content-between " >
 <%# ------navbar logo-------------------- %>
   <div class="logo-container">
     <%= link_to root_path do %>
@@ -7,10 +7,10 @@
   </div> 
   <%# ------ navbar links------- %>
   <div  id="navbarNavAltMarkup">
-    <div class="navbar-nav ">
-      <%= link_to "About", about_path, class: "nav-item nav-link h5" %>
-      <%= link_to 'Lessons', lesson_index_path, class: "nav-item nav-link h5"  %>
-      <%= link_to "Contacts", contacts_path, class: "nav-item nav-link h5" %>
+    <div class="navbar-nav">
+      <%= link_to "About", about_path, class: "text-dark nav-item nav-link h5" %>
+      <%= link_to 'Lessons', lesson_index_path, class: "text-dark nav-item nav-link h5"  %>
+      <%= link_to "Contacts", contacts_path, class: "text-dark nav-item nav-link h5" %>
     </div>
   </div>
 </nav>

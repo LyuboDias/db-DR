@@ -1,53 +1,52 @@
-
-<div class="card text-center border-0 second-backgr">
-  <div class="card-body">
-    <h2 >Contacts</h2>
-    <h3 class="card-title">Dr. Samarnath Sen</h3>
-    <p class="text-muted ">tel. +44 7916347155</p>
-    <p class="text-muted ">dr.smarnathsen@gmail.com</p>
-    <%# <a href="#" class="btn btn-primary">Go somewhere</a> %>
-  </div>
-</div>
-<%# ------conatct form-------------- %>
-
-  <%# ------div image------ %>
-<div class="row ">
-  <div class="col-sm-6 container">
-    <div class="container w-75 mt-5 mb-5">
-      <form>
-        <div class="form-group">
-          <label class="h5" for="ful-name">Full Name*</label>
-          <input type="text" class="form-control border-bottom " id="first-name" placeholder="Fist Name" required>
-          <input type="text" class="form-control mt-3" id="last-name" placeholder="Last Name" required>
-        </div>
-        <div class="form-group">
-          <label class="h5" for="email">Email address*</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label class="h5" for="subject">Subject</label>
-          <input type="text" class="form-control" id="subject" >
-        </div>
-        <div class="form-group">
-          <label class="h5" for="message">Message*</label>
-          <textarea name="message" id="message" cols="50" rows="6" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-warning btn-lg ">Submit</button>
-      </form>
+<div class="image-div3">
+  <div class=" text-center border-0 ">
+    <div class="card-body">
+      <h2 >Contacts</h2>
+      <h3 class="card-title">Dr. Samarnath Sen</h3>
+      <p class="text-muted ">tel. +44 7916347155</p>
+      <p class="text-muted ">dr.smarnathsen@gmail.com</p>
     </div>
   </div>
+  <%# ------conatct form-------------- %>
 
-  <div class="col-sm-6">
-    <div class="card border-0" style="width: 100%;"> 
-     <div class="card-body container">
-      <%= image_tag "face-close-up.jpg", class: "rounded" %>
-       
-     </div>
+  <div class="row ">
+    <div class="col-sm-6 container">
+      <div class="container w-75 mt-5 mb-5">
+        <form>
+          <div class="form-group">
+            <label class="h5" for="ful-name">Full Name*</label>
+            <input type="text" class="form-control border-bottom " id="first-name" placeholder="Fist Name" required>
+            <input type="text" class="form-control mt-3" id="last-name" placeholder="Last Name" required>
+          </div>
+          <div class="form-group">
+            <label class="h5" for="email">Email address*</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label class="h5" for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" >
+          </div>
+          <div class="form-group">
+            <label class="h5" for="message">Message*</label>
+            <textarea name="message" id="message" cols="50" rows="6" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg ">Submit</button>
+        </form>
+      </div>
     </div>
+
+  <%# ------contact image------ %>
+    <div class="col-sm-6">
+      <div class="d-flex justify-content-center align-items-center border-0 h-100" style="width: 100%;"> 
+      <div class="card-body container d-flex justify-content-center align-items-center">
+        <%= image_tag "face-close-up.jpg", class: "rounded w-75 " %>
+      </div>
+      </div>
+    </div>
+
   </div>
 </div>
-
 
 
 
