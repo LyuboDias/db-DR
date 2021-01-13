@@ -40,7 +40,24 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: repeat-x;
-  // position: relative;
+  background-attachment: fixed;
+}
+// ----image div2-------
+.image-div2 {
+  height: 30vh;
+  background-image: url("hexa-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+// ----image div3-------
+.image-div3 {
+  // height: 30vh;
+  background-image: url("vertical-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
   background-attachment: fixed;
 }
 // -----about--banner-------------------
@@ -61,5 +78,21 @@ body {
     align-items: center;
     justify-content: center;
     height: 90vh;
+  }
+}
+// ----------cookies modal---------
+
+.modal-dialog {
+  margin-top: 0rem;
+  max-width: 100%;
+
+  .modal-content {
+    border-radius: 0rem;
+  }
+
+  .modal-buttons {
+    .btn {
+      margin: 0.2rem;
+    }
   }
 }

@@ -1,29 +1,42 @@
-<div class="container ">
+<div class="image-div2 ">
+          
   <br>
   <br>
   <h1 class="text-center">Here are our Lessons</h1>
   <br>
-  <h3 class="text-center">Lessons</h3>
-  <br>
+  <div class="container">
+    <h3 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id fugiat dicta est aut quae quia exercitationem veniam eligendi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus error consectetur alias vero velit ipsam recusandae excepturi praesentium porro!</h3>
+  </div>
+</div>
+<div class="container ">
   <section >
     <% @lesson.each do |s| %>
-        <div class="container">
+        <div>
           <%# <div class=""> %>
             <%# <%= cl_image_tag s.image.key %> 
-          <%# </div> %>
+          <%# </div> %> 
+          <div class="image-div2 "> 
+          </div>  
           <div class=" p-5">
             <%= link_to lesson_path(s) do %>
-              <h2><%= s.title %></h2>
+              <h2 class="text-center"><%= s.title %></h2>
             <% end %>
-            <p><%= s.briefdescription %></p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga vel ipsam quaerat nam rem distinctio consequuntur. Rerum, doloremque id?</p>
-            <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-75" %>
+            <br>
+            <p class="text-center"><%= s.briefdescription %></p>
+            <br>
+            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga vel ipsam quaerat nam rem distinctio consequuntur. Rerum, doloremque id?</p>
+            <br>
+            <div class="d-flex justify-content-center" >
+              <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-75" %>
+            </div>
           </div>
         </div>
     <% end %>
   </section>
   <br>
-  <%= link_to 'Home', root_path, class: "btn btn-lg btn-warning" %>
-  <br>
-  <br>
 </div> 
+<div class="image-div2 ">     
+    <div class="d-flex align-items-center justify-content-center h-100" >
+      <%= link_to 'Home', root_path, class: "btn btn-lg btn-warning" %>
+    </div>
+</div>

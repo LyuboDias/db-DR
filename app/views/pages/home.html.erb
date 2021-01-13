@@ -2,10 +2,8 @@
 <section> 
   <div class="banner">
     <div class="banner-text container">
-    <p><span class="display-2 d-inline" >“</span></p>
-      <h2> I have always been able to talk to the doctor and get my problems        resolved. Coming here is like dealing with trusted family. Would not consider changing doctors. 
+      <h2><span class="display-4 d-inline" >“</span> I have always been able to talk to the doctor and get my problems        resolved. Coming here is like dealing with trusted family. Would not consider changing doctors. <span class="display-4 d-inline" >”</span>
       </h2>
-      <p><span class="display-2 d-inline" >”</span> </p>
       <br>
       <p class="blockquote-footer text-right">M. Simson via TripAdvisor</p>
       <br>
@@ -74,7 +72,8 @@
       <br>
       <p>Dr Orestis Georgiou is an author of 5 patents and 80 academic papers published in leading journals and conferences of Mathematics, Physics, Computer Science, Engineering and Medicine. As a Director of Research at Ultraleap he oversees all internal and external R&D activities and aligns them to the business needs and roadmaps. Through this role, Orestis has secured R&D grant funding in excess of €6 million including the two FET Open projects Levitate and H-Reality which he currently manages and contributes to. An avid networker, Orestis has built 80+ partnerships with leading academic and industrial research labs all around the world.</p>
       <br>
-      <button class="btn btn-warning btn-lg">Find classes</button>
+      <%# <button class="btn btn-warning btn-lg">Find classes</button> %>
+      <%= link_to 'Find Lessons', lesson_index_path, class: "btn btn-warning btn-lg"  %>
     </div>
   </div>
 </div>
@@ -90,7 +89,7 @@
       <br>
       <p>Dr Orestis Georgiou is an author of 5 patents and 80 academic papers published in leading journals and conferences of Mathematics, Physics, Computer Science, Engineering and Medicine. As a Director of Research at Ultraleap he oversees all internal and external R&D activities and aligns them to the business needs and roadmaps. Through this role, Orestis has secured R&D grant funding in excess of €6 million including the two FET Open projects Levitate and H-Reality which he currently manages and contributes to. An avid networker, Orestis has built 80+ partnerships with leading academic and industrial research labs all around the world.</p>
       <br>
-      <button class="btn btn-warning btn-lg">Get in Touch</button>
+      <%= link_to "Get in touch", contacts_path, class: "btn btn-warning btn-lg" %>
     </div>
   </div>
  <%# ------ image card ------ %>
@@ -106,3 +105,20 @@
 <br>
 <br>
 <br>
+<%# ---------cookies modal------ %>
+
+<div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="notice d-flex justify-content-between align-items-center">
+          <div class="cookie-text">&nbsp; &nbsp; This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</div>
+          <div class="modal-buttons d-flex flex-column flex-lg-row">
+            <a href="#" class="btn btn-warning btn-sm" data-dismiss="modal">I accept</a>
+            <a href="#" class="btn btn-warning btn-sm" data-dismiss="modal">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
