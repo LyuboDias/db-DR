@@ -25,6 +25,7 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import "../components/modals";
+import "../components/carousel";
 
 document.addEventListener("turbolinks:load", () => {
   // Call your functions here, e.g:

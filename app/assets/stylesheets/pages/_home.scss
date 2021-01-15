@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
   }
 }
 .second-backgr {
@@ -68,7 +68,6 @@ body {
   background-repeat: no-repeat;
   position: relative;
   background-attachment: fixed;
-  height: 90vh;
   text-align: center;
   width: 100%;
 
@@ -77,7 +76,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
   }
 }
 // ----------cookies modal---------
@@ -94,5 +92,62 @@ body {
     .btn {
       margin: 0.2rem;
     }
+  }
+}
+// ------------------------carousel---------------------
+
+.carousel-item {
+  background-position: center;
+  background-size: cover;
+  transform: (0.9, 0.9);
+  opacity: 0.4;
+}
+
+.service-title {
+  opacity: 1;
+  color: black;
+  font-size: 2em;
+  z-index: 999;
+}
+
+.service-text {
+  font-size: 1em;
+  z-index: 999;
+}
+
+// -------------media query breakpoints-------
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 606px) {
+  .service-title {
+    font-size: 1em;
+  }
+
+  .service-text {
+    font-size: 0.7em;
+  }
+
+  .carousel-caption {
+    bottom: 0;
+  }
+}
+/* Small devices (up to 670px) */
+@media only screen and (max-width: 670px) {
+  .carousel-caption {
+    bottom: 10%;
+  }
+}
+
+/* Medium devices (up to 918px) */
+@media only screen and (max-width: 918px) {
+  .carousel-caption {
+    bottom: 20%;
+  }
+}
+/* Large devices ( 918px and above) */
+@media only screen and (min-width: 918px) {
+  .carousel-caption {
+    bottom: 50%;
   }
 }

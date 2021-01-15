@@ -1,7 +1,7 @@
-<div class="image-div2 ">
+<div class="image-div2 h-100">
   <div class="conatiner">
     <br>
-    <h1 class="text-center" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Mollitia, veniam.</h1>
+    <h1 class="text-center mb-0" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Mollitia, veniam.</h1>
   </div>
 </div>
 <div class="container">
@@ -10,16 +10,17 @@
         <%# <%= cl_image_tag @lesson.image.key, class: "" %> 
       <%# </div> %> 
       <div>
-        <div class="image-div2" >
+        <div class="image-div2 h-100" >
           <h2 class="text-center"> <%= @lesson.title %> </h2>
           <br>
           <h3 class="text-center"><%= @lesson.subtitle %></h3>
           <br>
           <p class="text-center"> <%= @lesson.briefdescription %></p>
+          <br>
+          <br>
         </div>
-        <br>
         <div class="d-flex justify-content-center" >
-            <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-75 " %>
+            <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-100 " %>
         </div>
         <br>
         <br>
