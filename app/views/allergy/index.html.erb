@@ -2,7 +2,7 @@
           
   <br>
   <br>
-  <h1 class="text-center">Here are our Courses</h1>
+  <h1 class="text-center">Here are Allergies</h1>
   <br>
   <div class="container">
     <h3 class="text-center mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id fugiat dicta est aut quae quia exercitationem veniam eligendi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus error consectetur alias vero velit ipsam recusandae excepturi praesentium porro!</h3>
@@ -10,7 +10,7 @@
 </div>
 <div class="container ">
   <section >
-    <% @lesson.each do |s| %>
+    <% @allergy.each do |s| %>
         <div>
           <%# <div class=""> %>
             <%# <%= cl_image_tag s.image.key %> 
@@ -18,11 +18,10 @@
           <div class="image-div2 "> 
           </div>  
           <div class=" p-5">
-            <%= link_to lesson_path(s) do %>
+            <%= link_to allergy_path(s) do %>
               <h2 class="text-center"><%= s.title %></h2>
             <% end %>
             <br>
-            <p class="text-center"><%= s.briefdescription %></p>
             <br>
             <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga vel ipsam quaerat nam rem distinctio consequuntur. Rerum, doloremque id?</p>
             <br>
@@ -40,3 +39,4 @@
       <%= link_to 'Home', root_path, class: "btn btn-lg btn-warning" %>
     </div>
 </div>
+ 

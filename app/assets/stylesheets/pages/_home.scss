@@ -103,39 +103,30 @@ body {
   opacity: 0.4;
 }
 
-.service-title {
-  opacity: 1;
-  color: black;
-  font-size: 2em;
-  z-index: 999;
-}
-
-.service-text {
-  font-size: 1em;
-  z-index: 999;
-}
-
 // -------------media query breakpoints-------
 
 /* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 606px) {
-  .service-title {
-    font-size: 1em;
+@media only screen and (max-width: 500px) {
+  .h1-span span {
+    font-size: 16px !important;
   }
-
-  .service-text {
-    font-size: 0.7em;
-  }
-
-  .carousel-caption {
-    bottom: 0;
+  .p-span {
+    font-size: 10px;
   }
 }
-/* Small devices (up to 670px) */
-@media only screen and (max-width: 670px) {
+
+@media only screen and (max-width: 720px) {
   .carousel-caption {
-    bottom: 10%;
+    bottom: 0 !important;
+  }
+  .h1-span {
+    font-size: 20px !important;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
   }
 }
 
@@ -148,6 +139,6 @@ body {
 /* Large devices ( 918px and above) */
 @media only screen and (min-width: 918px) {
   .carousel-caption {
-    bottom: 50%;
+    bottom: 35%;
   }
 }

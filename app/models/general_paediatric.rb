@@ -1,0 +1,2 @@
+class GeneralPaediatric < ApplicationRecord
+end

@@ -1,0 +1,36 @@
+<div class="image-div2 h-100">
+  <div class="conatiner">
+    <br>
+    <h1 class="text-center mb-0" >Allergy content <br> Mollitia, veniam.</h1>
+  </div>
+</div>
+<div class="container">
+    <div class="rows ">
+      <%# <div>
+        <%# <%= cl_image_tag @lesson.image.key, class: "" %> 
+      <%# </div> %> 
+      <div>
+        <div class="image-div2 h-100" >
+          <h2 class="text-center"> <%= @allergy.title %> </h2>
+          <br>
+          <h3 class="text-center"><%= @allergy.subtitle %></h3>
+          <br>
+          <br>
+          <br>
+        </div>
+        <div class="d-flex justify-content-center" >
+            <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-100 " %>
+        </div>
+        <br>
+        <br>
+        <h5 class="text-center"> <%= @allergy.content %> </h5>
+        <br>
+        <%# <p><%= s.link %></p> 
+      </div>
+    </div>
+</div>
+<div class="image-div2 ">     
+    <div class="d-flex align-items-center justify-content-center h-100" >
+      <%= link_to 'Back', allergy_index_path, class: " btn btn-lg btn-warning" %>
+    </div>
+</div>
