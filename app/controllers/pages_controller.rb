@@ -11,9 +11,10 @@ class PagesController < ApplicationController
   def contacts 
   end
   
-  def about
-    
+  def about 
   end
   
+  def covid19
+  end
 
 end

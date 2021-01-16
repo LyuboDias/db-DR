@@ -1,16 +1,73 @@
-<nav class="navbar  navbar-expand-sm navbar-expand-md navbar-expand-lg  navbar-expand-xl  justify-content-between " >
-<%# ------navbar logo-------------------- %>
-  <div class="logo-container">
-    <%= link_to root_path do %>
-    <%= image_tag "logo2.png", class: "nav-logo" %>
-    <% end %>
-  </div> 
-  <%# ------ navbar links------- %>
-  <div  id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <%= link_to "About", about_path, class: "text-dark nav-item nav-link h5" %>
-      <%= link_to 'Lessons', lesson_index_path, class: "text-dark nav-item nav-link h5"  %>
-      <%= link_to "Contacts", contacts_path, class: "text-dark nav-item nav-link h5" %>
+
+<div class="navigation-wrap bg-light start-header start-style">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="logo-container">
+            <%= link_to root_path do %>
+            <%= image_tag "logo2.png", class: "nav-logo" %>
+            <% end %>
+          </div>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto py-4 py-md-0">
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <%= link_to "About", about_path, class: "nav-link " %>
+              </li>
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4  ">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "Courses", lesson_index_path, class: "nav-link dropdown-toggle" %></a>
+                <div class="dropdown-menu">
+                  <%# ----for href we need to put url/path/id--- %>
+                  <a class="dropdown-item" href="#">Course 1</a>
+                  <a class="dropdown-item" href="#">Course 2</a>
+                  <a class="dropdown-item" href="#">Course 3</a>
+                  <a class="dropdown-item" href="#">Course 4</a>
+                </div>
+              </li>
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "General Paediatrics", general_paediatric_index_path, class: "nav-link dropdown-toggle" %></a> 
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Heart Murmurs</a>
+                  <a class="dropdown-item" href="#">Fits, faints and funny turns</a>
+                  <a class="dropdown-item" href="#">Constipation</a>
+                  <a class="dropdown-item" href="#">Urine infections</a>
+                  <a class="dropdown-item" href="#">Weight problems</a>
+                  <a class="dropdown-item" href="#">Diarrhoea</a>
+                  <a class="dropdown-item" href="#">Reflux</a>
+                  <a class="dropdown-item" href="#">Repeated infections</a>
+                </div>
+              </li>
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "Allergy", allergy_index_path, class: "nav-link dropdown-toggle" %></a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Food Allergy</a>
+                  <a class="dropdown-item" href="#">Gastrointestinal Allergy</a>
+                  <a class="dropdown-item" href="#">Asthma</a>
+                  <a class="dropdown-item" href="#">Eczema</a>
+                  <a class="dropdown-item" href="#">Hay Fever (allergic rhinitis and conjunctivitis)</a>
+                </div>
+              </li>
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <%= link_to "Covid-19", covid19_path, class: "nav-link"%>
+              </li>
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <p><%= link_to 'Contact', contacts_path, class: "nav-link"  %></p>
+              </li>
+            </ul>
+          </div>
+        </nav>    
+      </div>
     </div>
   </div>
-</nav>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
