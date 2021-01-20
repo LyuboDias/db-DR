@@ -95,12 +95,15 @@ body {
   }
 }
 // ------------------------carousel---------------------
+.carousel-inner {
+  height: 80vh;
+}
 
 .carousel-item {
   background-position: center;
   background-size: cover;
   transform: (0.9, 0.9);
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 // -------------media query breakpoints-------
@@ -140,5 +143,33 @@ body {
 @media only screen and (min-width: 918px) {
   .carousel-caption {
     bottom: 35%;
+  }
+
+  .typewriter .type-text {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    // border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    // letter-spacing: 0.05em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .carousel-caption {
+    bottom: 20%;
+  }
+
+  .carousel-inner {
+    height: 50vh;
   }
 }

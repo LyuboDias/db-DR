@@ -9,3 +9,16 @@
     display: block;
   }
 }
+
+.linkedin {
+  color: rgb(12, 102, 194);
+  font-size: 50px;
+}
+
+.youtube {
+  color: rgb(255, 1, 2);
+  font-size: 50px;
+  &:hover {
+    color: rgb(244, 18, 18);
+  }
+}

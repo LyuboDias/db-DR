@@ -22,7 +22,7 @@
 
   //----------------------Menu On Hover--------------------
 
-  $("body").on("mouseenter mouseleave", ".nav-item", function (e) {
+  $(document).on("mouseenter mouseleave", ".nav-item", function (e) {
     if ($(window).width() > 750) {
       let _d = $(e.target).closest(".nav-item");
       _d.addClass("show");

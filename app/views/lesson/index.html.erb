@@ -2,41 +2,78 @@
           
   <br>
   <br>
-  <h1 class="text-center">Here are our Courses</h1>
+  <h1 class="text-center" data-aos="zoom-in" data-aos-duration="3000">Here are our Courses</h1>
   <br>
   <div class="container">
     <h3 class="text-center mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id fugiat dicta est aut quae quia exercitationem veniam eligendi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus error consectetur alias vero velit ipsam recusandae excepturi praesentium porro!</h3>
+    <br>
+    <br>
   </div>
 </div>
-<div class="container ">
-  <section >
+<%# ------ courses container------- %>
+<div class=" container"> 
+  <div class="row mt-5 ">
     <% @lesson.each do |s| %>
-        <div>
-          <%# <div class=""> %>
-            <%# <%= cl_image_tag s.image.key %> 
-          <%# </div> %> 
-          <div class="image-div2 "> 
-          </div>  
-          <div class=" p-5">
-            <%= link_to lesson_path(s) do %>
-              <h2 class="text-center"><%= s.title %></h2>
-            <% end %>
-            <br>
-            <p class="text-center"><%= s.briefdescription %></p>
-            <br>
-            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga vel ipsam quaerat nam rem distinctio consequuntur. Rerum, doloremque id?</p>
-            <br>
-            <div class="d-flex justify-content-center" >
-              <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-100" %>
+        <%= link_to lesson_path(s), class: "col-sm-6" do %>
+            <div class="card mb-5 ">
+              <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "card-img-top w-75 m-auto pt-5 lesson-img" %>
+              <div class="card-body">
+                <h5 class="card-title text-center text-dark "><%= s.title %></h5>
+                <p class="card-text text-center text-dark "><%= s.briefdescription %></p>
+              </div>
             </div>
-          </div>
-        </div>
+        <% end %>
     <% end %>
-  </section>
-  <br>
+  </div>
 </div> 
+<br>
+<br>
+<div class="container">
+  <h2 class="text-center" >Here we can embed some youtube videos</h2>
+</div>
+<br>
+<br>
+<%# ------ contact form--------- %>
+<div class="row ">
+    <div class="col-sm-6 container">
+      <div class="container w-75 mt-5 mb-5">
+        <form>
+          <div class="form-group">
+            <label class="h5" for="ful-name">Full Name*</label>
+            <input type="text" class="form-control border-bottom " id="first-name" placeholder="Fist Name" required>
+            <input type="text" class="form-control mt-3" id="last-name" placeholder="Last Name" required>
+          </div>
+          <div class="form-group">
+            <label class="h5" for="email">Email address*</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label class="h5" for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" >
+          </div>
+          <div class="form-group">
+            <label class="h5" for="message">Message*</label>
+            <textarea name="message" id="message" cols="50" rows="6" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg " data-aos="fade" data-aos-duration="3000">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  <%# ------contact image------ %>
+    <div class="col-sm-6">
+      <div class="d-flex justify-content-center align-items-center border-0 h-100" style="width: 100%;"> 
+      <div class="card-body container d-flex justify-content-center align-items-center">
+        <%= image_tag "face-close-up.jpg", class: "rounded w-75 " %>
+      </div>
+      </div>
+    </div>
+  </div>
 <div class="image-div2 ">     
     <div class="d-flex align-items-center justify-content-center h-100" >
-      <%= link_to 'Home', root_path, class: "btn btn-lg btn-warning" %>
+      <span data-aos="fade" data-aos-duration="3000"><%= link_to 'Home', root_path, class: "btn btn-lg btn-warning" %></span>  
     </div>
 </div>
+
+

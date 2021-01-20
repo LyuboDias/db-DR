@@ -1,36 +1,40 @@
 <div class="image-div2 h-100">
   <div class="conatiner">
     <br>
-    <h1 class="text-center mb-0" >General Paediatrics content <br> Mollitia, veniam.</h1>
+    <br>
+    <h1 class="text-center mb-0" data-aos="zoom-in" data-aos-duration="3000">General Paediatrics content <br> Mollitia, veniam.</h1>
   </div>
+  <br>
+  <br>
 </div>
+
 <div class="container">
-    <div class="rows ">
-      <%# <div>
-        <%# <%= cl_image_tag @lesson.image.key, class: "" %> 
-      <%# </div> %> 
-      <div>
-        <div class="image-div2 h-100" >
-          <h2 class="text-center"> <%= @general_paediatric.title %> </h2>
-          <br>
-          <h3 class="text-center"><%= @general_paediatric.subtitle %></h3>
+    <div class="card-deck d-block mt-5">
+      <div class="card mb-5">
+        <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "card-img-top w-75 m-auto pt-5 " %>
+        <div class="card-body">
+          <h2 class="card-title text-center text-dark "><%= @general_paediatric.title %></h2>
+          
+          <h5 class="card-text text-center text-dark "><%= @general_paediatric.subtitle %></h5>
           <br>
           <br>
-          <br>
+          <p class="card-text text-center text-dark "><%= @general_paediatric.content %></p>
         </div>
-        <div class="d-flex justify-content-center" >
-            <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-100 " %>
-        </div>
-        <br>
-        <br>
-        <h5 class="text-center"> <%= @general_paediatric.content %> </h5>
-        <br>
-        <%# <p><%= s.link %></p> 
       </div>
     </div>
 </div>
+
+<br>
+<br>
+<div class="container w-75 second-backgr p-5 rounded ">
+  <h3 class="text-center m-3" >My consultations are child centered, sensitive, friendly and I aim to help find the cause of any problem as well as treating the symptoms.</h3>
+  <p class="text-center text-muted" >Dr. Samarnath Sen</p>
+</div>
+<br>
+<br>
+
 <div class="image-div2 ">     
     <div class="d-flex align-items-center justify-content-center h-100" >
-      <%= link_to 'Back', general_paediatric_index_path, class: " btn btn-lg btn-warning" %>
+      <span data-aos="fade" data-aos-duration="3000"><%= link_to 'Back', general_paediatric_index_path, class: " btn btn-lg btn-warning" %></span>  
     </div>
 </div>
