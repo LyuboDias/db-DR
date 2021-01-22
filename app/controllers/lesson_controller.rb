@@ -5,7 +5,7 @@ class LessonController < ApplicationController
   end
 
   def show
-    @lesson = Lesson.find(params[:id])
+    @lesson = Lesson.friendly.find(params[:id])
   end
 
   def new

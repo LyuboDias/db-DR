@@ -134,6 +134,7 @@ repeated_infections.save!
 # ---------allergy examples ------------------------
 
 asthma = Allergy.new({
+  
   title: 'Asthma',
   subtitle: 'Asthma subtitle',
   content: "Heart murmurs are extra noises heard in the heart. They are quite common and frequently ‘innocent’, meaning that there is nothing actually wrong with your child’s heart. This is more likely if your child is older.
