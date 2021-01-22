@@ -5,7 +5,7 @@ class GeneralPaediatricController < ApplicationController
   end
 
   def show
-    @general_paediatric = GeneralPaediatric.find(params[:id])
+    @general_paediatric = GeneralPaediatric.friendly.find(params[:id])
   end
 
   def new

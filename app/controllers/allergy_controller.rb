@@ -5,13 +5,13 @@ class AllergyController < ApplicationController
   end
 
   def show
-    @allergy = Allergy.find(params[:id])
+    @allergy = Allergy.friendly.find(params[:id])
   end
 
   def new
     @allergy = Allergy.new
   end
-  
+   
   def create
     @allergy = Allergy.new(strong_params)
     if @allergy.save!
