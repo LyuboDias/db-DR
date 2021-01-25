@@ -9,7 +9,7 @@
 
 puts 'Cleaning database'
 Lesson.destroy_all  
-Allergie.destroy_all
+Disease.destroy_all
 GeneralPaediatric.destroy_all
 puts 'Database cleaned.'
 puts 'Creating new data base.'
@@ -50,7 +50,7 @@ heart_murmurs = GeneralPaediatric.new({
   content: "Heart murmurs are extra noises heard in the heart. They are quite common and frequently ‘innocent’, meaning that there is nothing actually wrong with your child’s heart. This is more likely if your child is older.
   <br/>
   Depending on what I find, I may have to arrange a chest X–ray and an ECG (heart tracing), neither of which will worry your child. If I feel the murmur may not be innocent, I would need to refer your child to a heart specialist from Birmingham Children’s Hospital.",
-  link: 'https://www.linkedin.com/in/lu-dias/',
+  link: 'https://www.linkedin.com/in/lu-dias/', 
 })
 heart_murmurs_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor_sov8a1.jpg")
 heart_murmurs.image.attach(io: heart_murmurs_pic, filename: "heart_murmurs_pic.jpg", content_type: "image/jpg")
@@ -158,7 +158,7 @@ repeated_infections.save!
 
 # ---------allergy examples ------------------------
 
-asthma = Allergie.new({
+asthma = Disease.new({
   
   title: 'Asthma',
   subtitle: 'Asthma subtitle',
@@ -173,7 +173,7 @@ asthma.image.attach(io: asthma_pic, filename: 'asthma-pic.png', content_type: 'i
 asthma.save!
 
 
-eczema = Allergie.new({
+eczema = Disease.new({
   
   title: 'Eczema',
   subtitle: 'Eczema is very common',
