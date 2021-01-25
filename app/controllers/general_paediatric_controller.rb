@@ -24,6 +24,6 @@ class GeneralPaediatricController < ApplicationController
   private
 
   def strong_params
-    params.require(:general_paediatric).permit(:title, :subtitle, :content, :link)
+    params.require(:general_paediatric).permit(:title, :subtitle, :content, :link, :image)
   end
 end

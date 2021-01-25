@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/contacts' => 'pages#contacts'
   get '/about' => 'pages#about' 
   get '/covid19' => 'pages#covid-19'
+  get '/links' => 'pages#links'
 end

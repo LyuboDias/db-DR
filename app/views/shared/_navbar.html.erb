@@ -1,21 +1,19 @@
 
+
 <div class="navigation-wrap bg-light start-header start-style ">
   <div class="container ">
     <div class="row">
       <div class="col-12">
-        <nav class="navbar navbar-expand-md navbar-light">
-          <div class="logo-container">
-            <%= link_to root_path do %>
-            <%= image_tag "logo2.png", class: "nav-logo" %>
-            <% end %>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="logo-container"> 
           </div>
           
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> 
           
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto py-4 py-md-0">
+          <div class="collapse navbar-collapse pt-3" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto py-4 py-lg-0">
               <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                 <%= link_to "About", about_path, class: "nav-link " %>
               </li>
@@ -28,7 +26,7 @@
                 </div>
               </li>
               <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "General Paediatrics", general_paediatric_index_path, class: "nav-link dropdown-toggle" %></a> 
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "General Paediatrics", general_paediatric_index_path, class: "nav-link dropdown-toggle" %> <i class="fas fa-caret-down dropdown-toggle text-danger"></i></a> 
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Heart Murmurs</a>
                   <a class="dropdown-item" href="#">Fits, faints and funny turns</a>
@@ -41,7 +39,17 @@
                 </div>
               </li>
               <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "Allergy", allergy_index_path, class: "nav-link dropdown-toggle" %></a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "Respiratory Paediatrics", allergy_index_path, class: "nav-link dropdown-toggle" %> <i class="fas fa-caret-down text-danger dropdown-toggle"></i></a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Sleep Apnoea</a>
+                  <a class="dropdown-item" href="#">Insomnia</a>
+                  <a class="dropdown-item" href="#">Night Terrors in Children<a>
+                  <a class="dropdown-item" href="#">Delayed Sleep Phase</a>
+                  <a class="dropdown-item" href="#">Attacks of Sleep</a>
+                </div>
+              </li>
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><%= link_to "Allergy", allergy_index_path, class: "nav-link dropdown-toggle" %> <i class="fas fa-caret-down text-danger dropdown-toggle"></i></a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Food Allergy</a>
                   <a class="dropdown-item" href="#">Gastrointestinal Allergy</a>
@@ -49,6 +57,9 @@
                   <a class="dropdown-item" href="#">Eczema</a>
                   <a class="dropdown-item" href="#">Hay Fever (allergic rhinitis and conjunctivitis)</a>
                 </div>
+              </li>
+              <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <%= link_to "Usefull Links", links_path, class: "nav-link"%>
               </li>
               <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                 <%= link_to "Covid-19", covid19_path, class: "nav-link"%>
@@ -63,7 +74,12 @@
     </div>
   </div>
 </div>
+<br> 
 <br>
 <br>
 <br>
-
+<div class="logo-container d-flex justify-content-center"> 
+  <%= link_to root_path do %> 
+  <%= image_tag "logo2.png", class: "nav-logo" %> 
+  <% end %> 
+</div> 

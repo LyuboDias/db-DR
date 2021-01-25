@@ -15,7 +15,7 @@
   <% @general_paediatric.each do |s| %>
       <%= link_to general_paediatric_path(s), class: "col-md-4 " do %>
         <div class=" card mb-5">
-          <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "card-img-top w-75 m-auto pt-5 lesson-img" %>
+          <%= cl_image_tag s.image.key, class: "card-img-top w-75 m-auto pt-5 lesson-img" %>
           <div class="card-body">
             <h2 class="card-title text-center text-dark"><%= s.title %></h2>
             <p class="card-text text-center text-dark"><%= s.subtitle %></p>
