@@ -1,4 +1,4 @@
-<div class="image-div3 pt-5 pb-5 mt-5">
+<div class="image-div3 pt-5 pb-5 mt-5" style="background-image: url('<%= cl_image_path "vertical-background_blt9fx" %>')">
   <div class=" text-center border-0 ">
     <div class="card-body">
       <h2 >Contacts</h2>
@@ -16,12 +16,11 @@
           method="POST">
           <div class="form-group">
             <label class="h5" for="ful-name">Full Name*</label>
-            <input type="text" class="form-control border-bottom " id="first-name" placeholder="Fist Name" required name="message">
-            <input type="text" class="form-control mt-3" id="last-name" placeholder="Last Name" required name="message">
+            <input type="text" class="form-control border-bottom " id="first-name"  required name="message">
           </div>
           <div class="form-group">
             <label class="h5" for="email">Email address*</label>
-            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required type="text" name="_replyto">
+            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required type="text" name="_replyto">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
@@ -41,12 +40,13 @@
     <div class="col-sm-6">
       <div class="d-flex justify-content-center align-items-center border-0 h-100" style="width: 100%;"> 
       <div class="card-body container d-flex justify-content-center align-items-center">
-        <%= image_tag "face-close-up.jpg", class: "rounded w-75 " %>
+        <%= cl_image_tag("face-close-up_odtbvk", class: "rounded w-75") %>
       </div>
       </div>
     </div>
   </div>
 </div>
+
 
 
 <%# ------------------------------------ %>

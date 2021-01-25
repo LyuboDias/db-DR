@@ -1,33 +1,33 @@
-<div class="p-5 image-div3">
+<div class="p-5 image-div3" style="background-image: url('<%= cl_image_path "vertical-background_blt9fx" %>')">
   <br>
-  <h1 class="text-center m-5" data-aos="zoom-in" data-aos-duration="3000">Covid-19</h1> 
+  <h1 class="text-center m-5" data-aos="zoom-in" data-aos-duration="3000">Usefull Links</h1> 
   <div class="row mb-5">
-    <div class="col-md-9">
-      <ul>
-        <li><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/" target="_blank">Covid-19</a></li>
-        <li><a href="https://www.nhs.uk/conditions/social-care-and-support-guide/" target="_blank">Care and Support</a></li>
-        <li><a href="https://www.nhs.uk/pregnancy/" target="_blank">Pregnancy</a></li>
-        <li><a href="https://www.nhs.uk/nhs-services/" target="_blank">NHS Services</a></li>
+    <div class="col-md-6">
+      <ul class="text-left mt-5" >
+        <li> <h4  ><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/" target="_blank" class="text-dark">Covid-19</a></h4> </li>
+        <li><h4><a href="https://www.nhs.uk/conditions/social-care-and-support-guide/" target="_blank" class="text-dark">Care and Support</a></h4></li>
+        <li><h4><a href="https://www.nhs.uk/pregnancy/" target="_blank" class="text-dark">Pregnancy</a></h4></li>
+        <li><h4><a href="https://www.nhs.uk/nhs-services/" target="_blank" class="text-dark">NHS Services</a></h4></li>
       </ul>
     </div>
     <br>
     <%# ----- contact form ------ %>
-    <div class="col-md-3">
+    <div class="col-md-6">
       <div class="container ">
-        <form>
+        <form action="https://formspree.io/f/xknpykvy"
+          method="POST">
           <div class="form-group">
             <label class="h5" for="ful-name">Full Name*</label>
-            <input type="text" class="form-control border-bottom " id="first-name" placeholder="Fist Name" required>
-            <input type="text" class="form-control mt-3" id="last-name" placeholder="Last Name" required>
+            <input type="text" class="form-control border-bottom " id="first-name"  required name="message">
           </div>
           <div class="form-group">
             <label class="h5" for="email">Email address*</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required type="text" name="_replyto">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
             <label class="h5" for="subject">Subject</label>
-            <input type="text" class="form-control" id="subject" >
+            <input type="text" class="form-control" id="subject" name="message" >
           </div>
           <div class="form-group">
             <label class="h5" for="message">Message*</label>

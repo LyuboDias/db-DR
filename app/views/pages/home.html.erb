@@ -9,19 +9,19 @@
     
     <div class="carousel-caption d-md-block pb-0 pt-0">
       <div class="col-12 typewriter">
-        <h2 class="text-dark font-weight-bold h1-span type-text mb-0">“I have always been able to talk to the doctor</h2> 
-        <h2 class="text-dark font-weight-bold h1-span"> and get my problems resolved. Coming here is like dealing with trusted family. Would not consider changing doctors.”</h2> 
-        <p class="p-span text-dark">M. Simson via TripAdvisor</p> 
+        <h2 class="text-dark font-weight-bold h1-span type-text mb-0">“Always been able to talk to Dr. Sen</h2> 
+        <h2 class="text-dark font-weight-bold h1-span"> and get my kids problems resolved. Would not consider changing doctor.”</h2> 
+        <p class="p-span text-dark">Michelle D. Parents</p> 
       </div>  
     </div> 
     <div class="carousel-item active ">
-      <img class="d-block w-100" src="https://images.pexels.com/photos/5996609/pexels-photo-5996609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="First slide"> 
+      <%= cl_image_tag("carousel2_knmjjm", class: "d-block w-100") %>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " src="https://images.pexels.com/photos/5996611/pexels-photo-5996611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="First slide">
+      <%= cl_image_tag("carousel1_nigegk", class: "d-block w-100") %>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://images.pexels.com/photos/5996610/pexels-photo-5996610.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="First slide">
+      <%= cl_image_tag("carousel3_s5xmea", class: "d-block w-100") %>
     </div>
     
   </div>
@@ -54,7 +54,7 @@
   <div class="col-sm-6">
     <div class="card border-0 h-100" style="width: 100%;"> 
       <div class="card-body container d-flex align-items-center justify-content-center ">
-      <%= image_tag "full-croped.jpg", class: "rounded w-100" %>
+      <%= cl_image_tag("full-croped_f1fzdr", class: "rounded w-100") %>
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@
 </div>
 
 <%# -------image div------ %>
-<div class="image-div ">
+<div class="image-div" style="background-image: url('<%= cl_image_path "circle-background_vd1p7b" %>')">
 </div>
 
 <%# ------cards links to courses------ %>
@@ -84,7 +84,7 @@
   <div class="col-sm-6">
     <div class="card border-0 h-100" style="width: 100%;"> 
       <div class="card-body container d-flex justify-content-center align-items-center">
-      <%= image_tag "https://images.pexels.com/photos/3059748/pexels-photo-3059748.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-75" %>
+      <%= cl_image_tag("men-laptop_zm8d91", class: "rounded w-75") %>
       </div>
     </div>
   </div>
@@ -116,7 +116,7 @@
   <div class="col-sm-6">
     <div class="card border-0 h-100" style="width: 100%;"> 
       <div class="card-body container d-flex justify-content-center align-items-center">
-      <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-75" %>
+      <%= cl_image_tag("gp_ijisqf", class: "rounded w-75") %>
       </div>
     </div>
   </div>
@@ -128,7 +128,7 @@
   <div class="col-sm-6">
     <div class="card border-0 h-100" style="width: 100%;"> 
       <div class="card-body container d-flex justify-content-center align-items-center">
-      <%= image_tag "https://images.pexels.com/photos/3059748/pexels-photo-3059748.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "rounded w-75" %>
+      <%= cl_image_tag("girl-allergy_tigaw4", class: "rounded w-75") %>
       </div>
     </div>
   </div>

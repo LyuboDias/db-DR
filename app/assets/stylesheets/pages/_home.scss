@@ -11,32 +11,31 @@ body {
   background-color: white;
 }
 // -------banner-------------------
-.banner {
-  background-image: url("chat-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  background-attachment: fixed;
-  height: 90vh;
-  text-align: center;
-  width: 100%;
+// .banner {
+//   background-image: url('<%= cl_image_tag("chat-background_zoheyz" %>');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   position: relative;
+//   background-attachment: fixed;
+//   height: 90vh;
+//   text-align: center;
+//   width: 100%;
 
-  .banner-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-}
+//   .banner-text {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//   }
+// }
 .second-backgr {
   background-color: $second-color;
 }
 // ----image div-------
 .image-div {
   height: 50vh;
-  background-image: url("circle-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat-x;
@@ -45,7 +44,6 @@ body {
 // ----image div2-------
 .image-div2 {
   height: 30vh;
-  background-image: url("hexa-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat-x;
@@ -54,7 +52,6 @@ body {
 // ----image div3-------
 .image-div3 {
   // height: 30vh;
-  background-image: url("vertical-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat-x;

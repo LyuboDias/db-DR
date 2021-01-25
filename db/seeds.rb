@@ -24,7 +24,7 @@ example = Lesson.new({
   Lyubomir has worked and continues to work in a variety of client-facing jobs including in fitness and transportation.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-example_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-plaster_vl1evb.jpg")
+example_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611602791/girl-monitor_mgvft6.jpg")
 example.image.attach(io: example_pic, filename: "example_pic.jpg", content_type: "image/jpg")
 example.save!
 
@@ -37,7 +37,7 @@ example_number2 = Lesson.new({
   content: "Here si the second lesson wooooow yeaaah",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-example_number2_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-mud_zxaiqx.jpg")
+example_number2_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611602791/work-desktop_kbjtp4.jpg")
 example_number2.image.attach(io: example_number2_pic, filename: "example_number2_pic.jpg", content_type: "image/jpg")
 example_number2.save!
 
@@ -123,7 +123,7 @@ diarrhoea = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-diarrhoea_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor_sov8a1.jpg")
+diarrhoea_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor2_lbtzqa.jpg")
 diarrhoea.image.attach(io: diarrhoea_pic, filename: "diarrhoea_pic.jpg", content_type: "image/jpg")
 
 diarrhoea.save!
@@ -184,7 +184,7 @@ A careful, detailed clinical history taken by an experienced physician coupled w
 It is also well recognised that even when allergens do not play a role in eczema, many children’s eczema is not as well managed as it could be, and that expert advice on treatment can he helpful to gain better control. I will be able to advise on whether an allergy may be contributing to your child’s eczema and give you an individualised treatment plan.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-eczema_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-teddy_a6s53i.jpg')
+eczema_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611603190/girl2-allergy_ooil9c.jpg')
 eczema.image.attach(io: eczema_pic, filename: 'eczema-pic.png', content_type: 'image/jpg')
 
 eczema.save!
@@ -213,7 +213,7 @@ insomnia = RespiratoryPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-insomnia_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor_sov8a1.jpg")
+insomnia_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611603654/insomnia_tbzx9d.jpg")
 insomnia.image.attach(io: insomnia_pic, filename: "insomnia_pic.jpg", content_type: "image/jpg")
 
 insomnia.save!
@@ -226,7 +226,7 @@ night_terrors = RespiratoryPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-night_terrors_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
+night_terrors_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-plaster_vl1evb.jpg")
 night_terrors.image.attach(io: night_terrors_pic, filename: "night_terrors_pic.jpg", content_type: "image/jpg")
 
 night_terrors.save!
@@ -240,7 +240,7 @@ snoring_children = RespiratoryPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-snoring_children_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
+snoring_children_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-bycicle_sjyigy.jpg")
 snoring_children.image.attach(io: snoring_children_pic, filename: "snoring_children_pic.jpg", content_type: "image/jpg")
 
 snoring_children.save!
