@@ -24,7 +24,7 @@ example = Lesson.new({
   Lyubomir has worked and continues to work in a variety of client-facing jobs including in fitness and transportation.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-example_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611611941/lesson_t0fu4e.jpg")
+example_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611615052/girl-desk_rjwgmn.jpg")
 example.image.attach(io: example_pic, filename: "example_pic.jpg", content_type: "image/jpg")
 example.save!
 
@@ -37,7 +37,7 @@ example_number2 = Lesson.new({
   content: "Here si the second lesson wooooow yeaaah",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-example_number2_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611611942/class_x3rfln.jpg")
+example_number2_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611615051/desk_wzakwg.jpg")
 example_number2.image.attach(io: example_number2_pic, filename: "example_number2_pic.jpg", content_type: "image/jpg")
 example_number2.save!
 
@@ -81,7 +81,7 @@ constipation = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-constipation_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-melon_e0w57r.jpg")
+constipation_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-teddy_a6s53i.jpg")
 constipation.image.attach(io: constipation_pic, filename: "constipation_pic.jpg", content_type: "image/jpg")
 
 constipation.save!
@@ -95,7 +95,7 @@ infections = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-infections_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-melon_e0w57r.jpg")
+infections_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-plaster_vl1evb.jpg")
 infections.image.attach(io: infections_pic, filename: "infections_pic.jpg", content_type: "image/jpg")
 
 infections.save!
@@ -109,7 +109,7 @@ weight = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-weight_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-melon_e0w57r.jpg")
+weight_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-mud_zxaiqx.jpg")
 weight.image.attach(io: weight_pic, filename: "weight_pic.jpg", content_type: "image/jpg")
 
 weight.save!
@@ -137,7 +137,7 @@ reflux = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-reflux_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-melon_e0w57r.jpg")
+reflux_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-mask_aaymaj.jpg")
 reflux.image.attach(io: reflux_pic, filename: "reflux_pic.jpg", content_type: "image/jpg")
 
 reflux.save!
@@ -151,7 +151,7 @@ repeated_infections = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-repeated_infections_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-melon_e0w57r.jpg")
+repeated_infections_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-gluharche_ddgzvn.jpg")
 repeated_infections.image.attach(io: repeated_infections_pic, filename: "repeated_infections_pic.jpg", content_type: "image/jpg")
 
 repeated_infections.save!
@@ -167,7 +167,7 @@ asthma = Disease.new({
   Depending on what I find, I may have to arrange a chest X–ray and an ECG (heart tracing), neither of which will worry your child. If I feel the murmur may not be innocent, I would need to refer your child to a heart specialist from Birmingham Children’s Hospital.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-asthma_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-gluharche_ddgzvn.jpg')
+asthma_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-milk_uqjy5b.jpg')
 asthma.image.attach(io: asthma_pic, filename: 'asthma-pic.png', content_type: 'image/jpg')
 
 asthma.save!
@@ -184,7 +184,7 @@ A careful, detailed clinical history taken by an experienced physician coupled w
 It is also well recognised that even when allergens do not play a role in eczema, many children’s eczema is not as well managed as it could be, and that expert advice on treatment can he helpful to gain better control. I will be able to advise on whether an allergy may be contributing to your child’s eczema and give you an individualised treatment plan.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-eczema_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-gluharche_ddgzvn.jpg')
+eczema_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor_sov8a1.jpg')
 eczema.image.attach(io: eczema_pic, filename: 'eczema-pic.png', content_type: 'image/jpg')
 
 eczema.save!
@@ -200,7 +200,7 @@ sleep_apnoea = RespiratoryPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-sleep_apnoea_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-mud_zxaiqx.jpg")
+sleep_apnoea_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-flower_brzt3s.jpg")
 sleep_apnoea.image.attach(io: sleep_apnoea_pic, filename: "sleep_apnoea_pic.jpg", content_type: "image/jpg")
 
 sleep_apnoea.save!
@@ -213,7 +213,7 @@ insomnia = RespiratoryPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-insomnia_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-mud_zxaiqx.jpg")
+insomnia_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor2_lbtzqa.jpg")
 insomnia.image.attach(io: insomnia_pic, filename: "insomnia_pic.jpg", content_type: "image/jpg")
 
 insomnia.save!
@@ -226,7 +226,7 @@ night_terrors = RespiratoryPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-night_terrors_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-mud_zxaiqx.jpg")
+night_terrors_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/baby_xprtsf.jpg")
 night_terrors.image.attach(io: night_terrors_pic, filename: "night_terrors_pic.jpg", content_type: "image/jpg")
 
 night_terrors.save!
@@ -240,7 +240,7 @@ snoring_children = RespiratoryPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
-snoring_children_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-mud_zxaiqx.jpg")
+snoring_children_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
 snoring_children.image.attach(io: snoring_children_pic, filename: "snoring_children_pic.jpg", content_type: "image/jpg")
 
 snoring_children.save!
