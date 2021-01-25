@@ -36,6 +36,18 @@ ActiveRecord::Schema.define(version: 2021_01_25_184753) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "allergies", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.text "content"
+    t.string "link"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "slug"
+    t.string "image"
+    t.index ["slug"], name: "index_allergies_on_slug", unique: true
+  end
+
   create_table "diseases", force: :cascade do |t|
     t.string "title"
     t.string "subtitle"
