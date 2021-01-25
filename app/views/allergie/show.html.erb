@@ -11,14 +11,14 @@
 <div class="container">
     <div class="card-deck d-block mt-5">
       <div class="card mb-5">
-        <%= cl_image_tag @allergy.image.key, class: "card-img-top w-75 m-auto pt-5 "%> 
+        <%= cl_image_tag @allergie.image.key, class: "card-img-top w-75 m-auto pt-5 "%> 
         <div class="card-body">
-          <h2 class="card-title text-center text-dark "><%= @allergy.title %></h2>
+          <h2 class="card-title text-center text-dark "><%= @allergie.title %></h2>
           
-          <h5 class="card-text text-center text-dark "><%= @allergy.subtitle %></h5>
+          <h5 class="card-text text-center text-dark "><%= @allergie.subtitle %></h5>
           <br>
           <br>
-          <p class="card-text text-center text-dark "><%= @allergy.content %></p>
+          <p class="card-text text-center text-dark "><%= @allergie.content %></p>
         </div>
       </div>
     </div>
@@ -36,6 +36,6 @@
 
 <div class="image-div2 ">     
     <div class="d-flex align-items-center justify-content-center h-100" >
-      <span data-aos="fade" data-aos-duration="3000"><%= link_to 'Back', allergy_index_path, class: " btn btn-lg btn-warning" %></span>  
+      <span data-aos="fade" data-aos-duration="3000"><%= link_to 'Back', allergie_index_path, class: " btn btn-lg btn-warning" %></span>  
     </div>
 </div>

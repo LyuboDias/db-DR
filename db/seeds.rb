@@ -9,7 +9,7 @@
 
 puts 'Cleaning database'
 Lesson.destroy_all  
-Allergy.destroy_all
+Allergie.destroy_all
 GeneralPaediatric.destroy_all
 puts 'Database cleaned.'
 puts 'Creating new data base.'
@@ -157,8 +157,8 @@ repeated_infections.image.attach(io: repeated_infections_pic, filename: "repeate
 repeated_infections.save!
 
 # ---------allergy examples ------------------------
-asthma_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-teddy_a6s53i.jpg')
-asthma = Allergy.new({
+
+asthma = Allergie.new({
   
   title: 'Asthma',
   subtitle: 'Asthma subtitle',
@@ -167,10 +167,29 @@ asthma = Allergy.new({
   Depending on what I find, I may have to arrange a chest X–ray and an ECG (heart tracing), neither of which will worry your child. If I feel the murmur may not be innocent, I would need to refer your child to a heart specialist from Birmingham Children’s Hospital.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-
+asthma_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-teddy_a6s53i.jpg')
 asthma.image.attach(io: asthma_pic, filename: 'asthma-pic.png', content_type: 'image/jpg')
 
 asthma.save!
+
+
+eczema = Allergie.new({
+  
+  title: 'Eczema',
+  subtitle: 'Eczema is very common',
+  content: "Eczema is very common and affects 15-20% of school children. Even moderate eczema can have a dramatic effect on quality of life. In most cases eczema responds well to treatment with appropriate creams alone. It is well recognised however that allergies can play a significant role in the worsening of many children’s eczema. Identification and exclusion of food or environmental allergens can help improve eczema and reduce the need for conventional treatments such as steroid creams.
+
+A careful, detailed clinical history taken by an experienced physician coupled with allergy tests such as Skin Prick Testing or Specific IgE blood testing, together with provocation challenges remains the most reliable way to reach a diagnosis or exclude allergy as the cause of the problems.
+
+It is also well recognised that even when allergens do not play a role in eczema, many children’s eczema is not as well managed as it could be, and that expert advice on treatment can he helpful to gain better control. I will be able to advise on whether an allergy may be contributing to your child’s eczema and give you an individualised treatment plan.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+eczema_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-teddy_a6s53i.jpg')
+eczema.image.attach(io: eczema_pic, filename: 'eczema-pic.png', content_type: 'image/jpg')
+
+eczema.save!
+
+
 
 # --------------Respiratory Paediatric examples-----
 

@@ -11,8 +11,8 @@
 </div>
 <%# ------- allergy cards -------- %>
 <div class="row  m-5">
-  <% @allergy.each do |s| %>
-      <%= link_to allergy_path(s), class: "col-md-6 " do %>
+  <% @allergie.each do |s| %>
+      <%= link_to allergie_path(s), class: "col-md-6 " do %>
         <div class=" card mb-5">
           <%= cl_image_tag s.image.key, class: "card-img-top w-75 m-auto pt-5 lesson-img" %>
           <div class="card-body">
