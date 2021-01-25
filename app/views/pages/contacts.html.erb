@@ -3,8 +3,8 @@
     <div class="card-body">
       <h2 >Contacts</h2>
       <h3 class="card-title">Dr. Samarnath Sen</h3>
-      <p class="text-muted" data-aos="fade-left" data-aos-duration="3000">tel. +44 7916347155</p>
-      <p class="text-muted" data-aos="fade-right" data-aos-duration="3000">dr.smarnathsen@gmail.com</p>
+      <p class="text-muted" data-aos="fade-left" data-aos-duration="3000">tel. 00447855049521 / 0035054066739</p>
+      <p class="text-muted" data-aos="fade-right" data-aos-duration="3000">drsen@ymail.com   drsen@nhs.net</p>
     </div>
   </div>
   <%# ------conatct form-------------- %>
@@ -12,20 +12,21 @@
   <div class="row ">
     <div class="col-sm-6 container">
       <div class="container w-75 mt-5 mb-5">
-        <form>
+        <form action="https://formspree.io/f/xknpykvy"
+          method="POST">
           <div class="form-group">
             <label class="h5" for="ful-name">Full Name*</label>
-            <input type="text" class="form-control border-bottom " id="first-name" placeholder="Fist Name" required>
-            <input type="text" class="form-control mt-3" id="last-name" placeholder="Last Name" required>
+            <input type="text" class="form-control border-bottom " id="first-name" placeholder="Fist Name" required name="message">
+            <input type="text" class="form-control mt-3" id="last-name" placeholder="Last Name" required name="message">
           </div>
           <div class="form-group">
             <label class="h5" for="email">Email address*</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required type="text" name="_replyto">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
             <label class="h5" for="subject">Subject</label>
-            <input type="text" class="form-control" id="subject" >
+            <input type="text" class="form-control" id="subject" name="message" >
           </div>
           <div class="form-group">
             <label class="h5" for="message">Message*</label>
@@ -48,4 +49,27 @@
 </div>
 
 
+<%# ------------------------------------ %>
+
+
+
+<!-- modify this form HTML and place wherever you want your form -->
+
+<%# <form
+  action="https://formspree.io/f/xknpykvy"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form> %>
 

@@ -11,7 +11,7 @@
 <div class="container">
     <div class="card-deck d-block mt-5">
       <div class="card mb-5">
-        <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "card-img-top w-75 m-auto pt-5 " %>
+        <%= cl_image_tag @allergy.image.key, class: "card-img-top w-75 m-auto pt-5 "%>
         <div class="card-body">
           <h2 class="card-title text-center text-dark "><%= @general_paediatric.title %></h2>
           

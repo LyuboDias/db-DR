@@ -13,6 +13,7 @@
 .linkedin {
   color: rgb(12, 102, 194);
   font-size: 50px;
+  transition: 0.3s;
 }
 
 .youtube {
@@ -20,5 +21,15 @@
   font-size: 50px;
   &:hover {
     color: rgb(244, 18, 18);
+    transition: 0.3s;
+  }
+}
+
+.facebook {
+  color: rgb(73, 102, 170);
+  font-size: 50px;
+  &:hover {
+    color: rgb(59, 88, 154);
+    transition: 0.3s;
   }
 }

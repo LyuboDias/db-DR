@@ -9,6 +9,8 @@
 
 puts 'Cleaning database'
 Lesson.destroy_all  
+Allergy.destroy_all
+GeneralPaediatric.destroy_all
 puts 'Database cleaned.'
 puts 'Creating new data base.'
 
@@ -22,7 +24,7 @@ example = Lesson.new({
   Lyubomir has worked and continues to work in a variety of client-facing jobs including in fitness and transportation.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-example_pic = URI.open("https://images.pexels.com/photos/714698/pexels-photo-714698.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+example_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-plaster_vl1evb.jpg")
 example.image.attach(io: example_pic, filename: "example_pic.jpg", content_type: "image/jpg")
 example.save!
 
@@ -35,7 +37,7 @@ example_number2 = Lesson.new({
   content: "Here si the second lesson wooooow yeaaah",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
-example_number2_pic = URI.open("https://images.pexels.com/photos/265076/pexels-photo-265076.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+example_number2_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-mud_zxaiqx.jpg")
 example_number2.image.attach(io: example_number2_pic, filename: "example_number2_pic.jpg", content_type: "image/jpg")
 example_number2.save!
 
@@ -50,6 +52,8 @@ heart_murmurs = GeneralPaediatric.new({
   Depending on what I find, I may have to arrange a chest X–ray and an ECG (heart tracing), neither of which will worry your child. If I feel the murmur may not be innocent, I would need to refer your child to a heart specialist from Birmingham Children’s Hospital.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
+heart_murmurs_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor_sov8a1.jpg")
+heart_murmurs.image.attach(io: heart_murmurs_pic, filename: "heart_murmurs_pic.jpg", content_type: "image/jpg")
 
 heart_murmurs.save!
 
@@ -63,6 +67,9 @@ faints = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
+faints_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-melon_e0w57r.jpg")
+faints.image.attach(io: faints_pic, filename: "faints_pic.jpg", content_type: "image/jpg")
+
 faints.save!
 
 constipation = GeneralPaediatric.new({
@@ -73,6 +80,9 @@ constipation = GeneralPaediatric.new({
   Depending on what I find, I may have to arrange a chest X–ray and an ECG (heart tracing), neither of which will worry your child. If I feel the murmur may not be innocent, I would need to refer your child to a heart specialist from Birmingham Children’s Hospital.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
+
+constipation_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-mask_aaymaj.jpg")
+constipation.image.attach(io: constipation_pic, filename: "constipation_pic.jpg", content_type: "image/jpg")
 
 constipation.save!
 
@@ -85,6 +95,9 @@ infections = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
+infections_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-gluharche_ddgzvn.jpg")
+infections.image.attach(io: infections_pic, filename: "infections_pic.jpg", content_type: "image/jpg")
+
 infections.save!
 
 weight = GeneralPaediatric.new({
@@ -95,6 +108,9 @@ weight = GeneralPaediatric.new({
   Depending on what I find, I may have to arrange a chest X–ray and an ECG (heart tracing), neither of which will worry your child. If I feel the murmur may not be innocent, I would need to refer your child to a heart specialist from Birmingham Children’s Hospital.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
+
+weight_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-milk_uqjy5b.jpg")
+weight.image.attach(io: weight_pic, filename: "weight_pic.jpg", content_type: "image/jpg")
 
 weight.save!
 
@@ -107,6 +123,9 @@ diarrhoea = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
+diarrhoea_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor_sov8a1.jpg")
+diarrhoea.image.attach(io: diarrhoea_pic, filename: "diarrhoea_pic.jpg", content_type: "image/jpg")
+
 diarrhoea.save!
 
 reflux = GeneralPaediatric.new({
@@ -117,6 +136,9 @@ reflux = GeneralPaediatric.new({
   Depending on what I find, I may have to arrange a chest X–ray and an ECG (heart tracing), neither of which will worry your child. If I feel the murmur may not be innocent, I would need to refer your child to a heart specialist from Birmingham Children’s Hospital.",
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
+
+reflux_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-flower_brzt3s.jpg")
+reflux.image.attach(io: reflux_pic, filename: "reflux_pic.jpg", content_type: "image/jpg")
 
 reflux.save!
 
@@ -129,10 +151,13 @@ repeated_infections = GeneralPaediatric.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
+repeated_infections_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/baby_xprtsf.jpg")
+repeated_infections.image.attach(io: repeated_infections_pic, filename: "repeated_infections_pic.jpg", content_type: "image/jpg")
+
 repeated_infections.save!
 
 # ---------allergy examples ------------------------
-
+asthma_pic = URI.open('https://res.cloudinary.com/samarnathsen/image/upload/v1611576088/kid-teddy_a6s53i.jpg')
 asthma = Allergy.new({
   
   title: 'Asthma',
@@ -143,7 +168,63 @@ asthma = Allergy.new({
   link: 'https://www.linkedin.com/in/lu-dias/',
 })
 
+asthma.image.attach(io: asthma_pic, filename: 'asthma-pic.png', content_type: 'image/jpg')
+
 asthma.save!
+
+# --------------Respiratory Paediatric examples-----
+
+sleep_apnoea = RespiratoryPaediatric.new({ 
+  title: 'Sleep Apnoea',
+  subtitle: 'Why do children suffer from sleep apnoea?',
+  content: "Sleep apnoea happens when the throat relaxes so much during sleep that the walls collapse, making your child's airway narrower than usual. Sometimes enlarged tonsils or adenoids can also cause Sleep apnoea in Children.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+
+sleep_apnoea_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
+sleep_apnoea.image.attach(io: sleep_apnoea_pic, filename: "sleep_apnoea_pic.jpg", content_type: "image/jpg")
+
+sleep_apnoea.save!
+
+
+insomnia = RespiratoryPaediatric.new({ 
+  title: 'Insomnia',
+  subtitle: 'Is Insomnia a different type of sleep disorder?',
+  content: "Insomnia is a particular kind of sleep disorder that causes problems getting to sleep or staying asleep. Prolonged periods of insomnia can have a significant mental and physical effect on your child and on the rest of the family.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+
+insomnia_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor_sov8a1.jpg")
+insomnia.image.attach(io: insomnia_pic, filename: "insomnia_pic.jpg", content_type: "image/jpg")
+
+insomnia.save!
+
+
+night_terrors = RespiratoryPaediatric.new({ 
+  title: 'Night Terrors in Children',
+  subtitle: 'Do children usually suffer from Night Terrors?',
+  content: "Night terrors are caused by an abnormal sleep state known as parasomnia. Your child seems as if he or she is awake but they are actually in a stage of sleep.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+
+night_terrors_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
+night_terrors.image.attach(io: night_terrors_pic, filename: "night_terrors_pic.jpg", content_type: "image/jpg")
+
+night_terrors.save!
+
+
+
+snoring_children = RespiratoryPaediatric.new({ 
+  title: 'Snoring In Children',
+  subtitle: 'Why do children suffer from sleep apnoea?',
+  content: "Sleep apnoea happens when the throat relaxes so much during sleep that the walls collapse, making your child's airway narrower than usual. Sometimes enlarged tonsils or adenoids can also cause Sleep apnoea in Children.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+
+snoring_children_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
+snoring_children.image.attach(io: snoring_children_pic, filename: "snoring_children_pic.jpg", content_type: "image/jpg")
+
+snoring_children.save!
 
 
 puts "Seeding is finished"

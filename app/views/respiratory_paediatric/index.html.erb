@@ -2,7 +2,7 @@
           
   <br>
   <br>
-  <h1 class="text-center" data-aos="zoom-in" data-aos-duration="3000">Here are General Paediatrics</h1>
+  <h1 class="text-center" data-aos="zoom-in" data-aos-duration="3000">Here are Respiratory Paediatrics</h1>
   <br>
   <div class="container ">
     <h3 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id fugiat dicta est aut quae quia exercitationem veniam eligendi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus error consectetur alias vero velit ipsam recusandae excepturi praesentium porro!</h3>
@@ -12,8 +12,8 @@
 </div>
 <%# ----- cards container------- %>
 <div class="row  m-5">
-  <% @general_paediatric.each do |s| %>
-      <%= link_to general_paediatric_path(s), class: "col-md-4 " do %>
+  <% @respiratory_paediatric.each do |s| %>
+      <%= link_to respiratory_paediatric_path(s), class: "col-md-4 " do %>
         <div class=" card mb-5">
           <%= cl_image_tag s.image.key, class: "card-img-top w-75 m-auto pt-5 lesson-img" %>
           <div class="card-body">

@@ -1,5 +1,4 @@
 <div class="image-div2 h-100 mt-5">
-          
   <br>
   <br>
   <h1 class="text-center" data-aos="zoom-in" data-aos-duration="3000">Here are our Courses</h1>
@@ -13,10 +12,10 @@
 <%# ------ courses container------- %>
 <div class=" container"> 
   <div class="row mt-5 ">
-    <% @lesson.each do |s| %>
+    <% @lesson.each do |s| %> 
         <%= link_to lesson_path(s), class: "col-sm-6" do %>
             <div class="card mb-5 ">
-              <%= image_tag "https://images.pexels.com/photos/263564/pexels-photo-263564.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "card-img-top w-75 m-auto pt-5 lesson-img" %>
+              <%= cl_image_tag s.image.key, class: "card-img-top w-75 m-auto pt-5 lesson-img" %> 
               <div class="card-body">
                 <h5 class="card-title text-center text-dark "><%= s.title %></h5>
                 <p class="card-text text-center text-dark "><%= s.briefdescription %></p>
@@ -75,5 +74,11 @@
       <span data-aos="fade" data-aos-duration="3000"><%= link_to 'Home', root_path, class: "btn btn-lg btn-warning" %></span>  
     </div>
 </div>
+
+
+
+
+
+
 
 

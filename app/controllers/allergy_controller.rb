@@ -24,6 +24,6 @@ class AllergyController < ApplicationController
   private
 
   def strong_params
-    params.require(:allergy).permit(:title, :subtitle, :content, :link)
+    params.require(:allergy).permit(:title, :subtitle, :content, :link, :image)
   end
 end
