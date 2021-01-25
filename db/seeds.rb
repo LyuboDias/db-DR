@@ -172,5 +172,59 @@ asthma.image.attach(io: asthma_pic, filename: 'asthma-pic.png', content_type: 'i
 
 asthma.save!
 
+# --------------Respiratory Paediatric examples-----
+
+sleep_apnoea = RespiratoryPaediatric.new({ 
+  title: 'Sleep Apnoea',
+  subtitle: 'Why do children suffer from sleep apnoea?',
+  content: "Sleep apnoea happens when the throat relaxes so much during sleep that the walls collapse, making your child's airway narrower than usual. Sometimes enlarged tonsils or adenoids can also cause Sleep apnoea in Children.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+
+sleep_apnoea_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
+sleep_apnoea.image.attach(io: sleep_apnoea_pic, filename: "sleep_apnoea_pic.jpg", content_type: "image/jpg")
+
+sleep_apnoea.save!
+
+
+insomnia = RespiratoryPaediatric.new({ 
+  title: 'Insomnia',
+  subtitle: 'Is Insomnia a different type of sleep disorder?',
+  content: "Insomnia is a particular kind of sleep disorder that causes problems getting to sleep or staying asleep. Prolonged periods of insomnia can have a significant mental and physical effect on your child and on the rest of the family.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+
+insomnia_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-doctor_sov8a1.jpg")
+insomnia.image.attach(io: insomnia_pic, filename: "insomnia_pic.jpg", content_type: "image/jpg")
+
+insomnia.save!
+
+
+night_terrors = RespiratoryPaediatric.new({ 
+  title: 'Night Terrors in Children',
+  subtitle: 'Do children usually suffer from Night Terrors?',
+  content: "Night terrors are caused by an abnormal sleep state known as parasomnia. Your child seems as if he or she is awake but they are actually in a stage of sleep.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+
+night_terrors_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
+night_terrors.image.attach(io: night_terrors_pic, filename: "night_terrors_pic.jpg", content_type: "image/jpg")
+
+night_terrors.save!
+
+
+
+snoring_children = RespiratoryPaediatric.new({ 
+  title: 'Snoring In Children',
+  subtitle: 'Why do children suffer from sleep apnoea?',
+  content: "Sleep apnoea happens when the throat relaxes so much during sleep that the walls collapse, making your child's airway narrower than usual. Sometimes enlarged tonsils or adenoids can also cause Sleep apnoea in Children.",
+  link: 'https://www.linkedin.com/in/lu-dias/',
+})
+
+snoring_children_pic = URI.open("https://res.cloudinary.com/samarnathsen/image/upload/v1611576087/kid-balloon_qygtu7.jpg")
+snoring_children.image.attach(io: snoring_children_pic, filename: "snoring_children_pic.jpg", content_type: "image/jpg")
+
+snoring_children.save!
+
 
 puts "Seeding is finished"

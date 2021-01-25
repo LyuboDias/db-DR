@@ -1,0 +1,43 @@
+<div class="image-div2 h-100 mt-5">
+          
+  <br>
+  <br>
+  <h1 class="text-center" data-aos="zoom-in" data-aos-duration="3000">Here are Respiratory Paediatrics</h1>
+  <br>
+  <div class="container ">
+    <h3 class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id fugiat dicta est aut quae quia exercitationem veniam eligendi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus error consectetur alias vero velit ipsam recusandae excepturi praesentium porro!</h3>
+  </div>
+  <br>
+  <br>
+</div>
+<%# ----- cards container------- %>
+<div class="row  m-5">
+  <% @respiratory_paediatric.each do |s| %>
+      <%= link_to respiratory_paediatric_path(s), class: "col-md-4 " do %>
+        <div class=" card mb-5">
+          <%= cl_image_tag s.image.key, class: "card-img-top w-75 m-auto pt-5 lesson-img" %>
+          <div class="card-body">
+            <h2 class="card-title text-center text-dark"><%= s.title %></h2>
+            <p class="card-text text-center text-dark"><%= s.subtitle %></p>
+          </div>
+        </div>
+      <% end %>
+  <% end %>
+</div>
+<br>
+<div class="container w-75 second-backgr p-5 rounded ">
+  <h3 class="text-center m-3" >My consultations are child centered, sensitive, friendly and I aim to help find the cause of any problem as well as treating the symptoms.</h3>
+  <p class="text-center text-muted" >Dr. Samarnath Sen</p>
+</div>
+<br>
+<br>
+<br>
+<div class="image-div2 ">     
+    <div class="d-flex align-items-center justify-content-center h-100" >
+      <span data-aos="fade" data-aos-duration="3000"><%= link_to 'Home', root_path, class: "btn btn-lg btn-warning" %></span>  
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,40 @@
+<div class="image-div2 h-100 mt-5">
+  <div class="conatiner">
+    <br>
+    <br>
+    <h1 class="text-center mb-0" data-aos="zoom-in" data-aos-duration="3000">Respiratory Paediatrics content <br> Mollitia, veniam.</h1>
+  </div>
+  <br>
+  <br>
+</div>
+
+<div class="container">
+    <div class="card-deck d-block mt-5">
+      <div class="card mb-5">
+        <%= cl_image_tag @respiratory_paediatric.image.key, class: "card-img-top w-75 m-auto pt-5 "%>
+        <div class="card-body">
+          <h2 class="card-title text-center text-dark "><%= @respiratory_paediatric.title %></h2>
+          
+          <h5 class="card-text text-center text-dark "><%= @respiratory_paediatric.subtitle %></h5>
+          <br>
+          <br>
+          <p class="card-text text-center text-dark "><%= @respiratory_paediatric.content %></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<br>
+<br>
+<div class="container w-75 second-backgr p-5 rounded ">
+  <h3 class="text-center m-3" >My consultations are child centered, sensitive, friendly and I aim to help find the cause of any problem as well as treating the symptoms.</h3>
+  <p class="text-center text-muted" >Dr. Samarnath Sen</p>
+</div>
+<br>
+<br>
+
+<div class="image-div2 ">     
+    <div class="d-flex align-items-center justify-content-center h-100" >
+      <span data-aos="fade" data-aos-duration="3000"><%= link_to 'Back', respiratory_paediatric_index_path, class: " btn btn-lg btn-warning" %></span>  
+    </div>
+</div>

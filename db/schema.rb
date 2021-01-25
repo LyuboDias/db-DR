@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_25_131925) do
+ActiveRecord::Schema.define(version: 2021_01_25_162053) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,6 +82,16 @@ ActiveRecord::Schema.define(version: 2021_01_25_131925) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "slug"
     t.index ["slug"], name: "index_lessons_on_slug", unique: true
+  end
+
+  create_table "respiratory_paediatrics", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.text "content"
+    t.string "link"
+    t.string "image"
+    t.string "slug"
+    t.index ["slug"], name: "index_respiratory_paediatrics_on_slug", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
