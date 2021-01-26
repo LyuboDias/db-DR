@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_25_184753) do
+ActiveRecord::Schema.define(version: 2021_01_26_145601) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,8 @@ ActiveRecord::Schema.define(version: 2021_01_25_184753) do
     t.string "link"
     t.string "image"
     t.string "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.index ["slug"], name: "index_diseases_on_slug", unique: true
   end
 
@@ -101,6 +103,8 @@ ActiveRecord::Schema.define(version: 2021_01_25_184753) do
     t.string "link"
     t.string "image"
     t.string "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.index ["slug"], name: "index_respiratory_paediatrics_on_slug", unique: true
   end
 
