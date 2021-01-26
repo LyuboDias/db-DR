@@ -11,6 +11,7 @@
       </li><li class="nav-item dropdown">
         <%= link_to "Courses", lesson_index_path, { :class => 'nav-link dropdown-toggle', 'data-toggle' => 'dropdown', 'aria-haspopup' => 'true', 'aria-expanded' => 'false' } %>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to "All courses", lesson_index_path, class: "nav-link"%>
           <a href="https://db-dr.herokuapp.com/courses/best-lessons-in-london" class="dropdown-item" href="localhost:3000/lesson/10">Best Lessons in London</a>
           <a href="https://db-dr.herokuapp.com/courses/lesson-number-2" class="dropdown-item" href="localhost:3000/lesson/11">Lesson number 2</a>
         </div>
@@ -18,6 +19,7 @@
       <li class="nav-item dropdown">
         <%= link_to "General Paediatrics", general_paediatric_index_path, { :class => 'nav-link dropdown-toggle', 'data-toggle' => 'dropdown', 'aria-haspopup' => 'true', 'aria-expanded' => 'false' } %>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to "All GPs", general_paediatric_index_path, class: "nav-link"%>
           <a class="dropdown-item" href="#">Heart Murmurs</a>
           <a class="dropdown-item" href="#">Fits, faints and funny turns</a>
           <a class="dropdown-item" href="#">Constipation</a>
@@ -31,6 +33,7 @@
       <li class="nav-item dropdown">
         <%= link_to "Respiratory Paediatrics", respiratory_paediatric_index_path, { :class => 'nav-link dropdown-toggle', 'data-toggle' => 'dropdown', 'aria-haspopup' => 'true', 'aria-expanded' => 'false' } %>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to "All RPs", respiratory_paediatric_index_path, class: "nav-link"%>
           <a class="dropdown-item" href="#">Sleep Apnoea</a>
           <a class="dropdown-item" href="#">Insomnia</a>
           <a class="dropdown-item" href="#">Night Terrors in Children<a>
@@ -41,6 +44,7 @@
       <li class="nav-item dropdown">
           <%= link_to "Allergy", disease_index_path, { :class => 'nav-link dropdown-toggle', 'data-toggle' => 'dropdown', 'aria-haspopup' => 'true', 'aria-expanded' => 'false' } %>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to "All allergies", disease_index_path, class: "nav-link"%>
           <a class="dropdown-item" href="#">Food Allergy</a>
           <a class="dropdown-item" href="#">Gastrointestinal Allergy</a>
           <a class="dropdown-item" href="#">Asthma</a>
