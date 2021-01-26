@@ -11,6 +11,7 @@ puts 'Cleaning database'
 Lesson.destroy_all  
 Disease.destroy_all
 GeneralPaediatric.destroy_all
+RespiratoryPaediatric.destroy_all
 puts 'Database cleaned.'
 puts 'Creating new data base.'
 
