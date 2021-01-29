@@ -10,26 +10,7 @@ body {
   min-height: 100vh;
   background-color: white;
 }
-// -------banner-------------------
-// .banner {
-//   background-image: url('<%= cl_image_tag("chat-background_zoheyz" %>');
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   position: relative;
-//   background-attachment: fixed;
-//   height: 90vh;
-//   text-align: center;
-//   width: 100%;
 
-//   .banner-text {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     height: 100vh;
-//   }
-// }
 .second-backgr {
   background-color: $second-color;
 }
@@ -167,4 +148,16 @@ body {
   .carousel-inner {
     height: 50vh;
   }
+}
+
+.opacity img {
+  opacity: 0.4;
+}
+.opacity:hover img {
+  opacity: 1;
+  // transition: all 0.5s ease-in-out;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
 }

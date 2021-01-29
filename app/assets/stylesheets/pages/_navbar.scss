@@ -4,11 +4,7 @@
 }
 
 .navbar-toggler {
-  border-radius: 50%;
-  border: 2px solid rgb(153, 153, 154) !important;
-  .toggler-plus {
-    font-size: 32px;
-  }
+  border: none;
 }
 .navbar-toggler:active {
   -webkit-transition: 0.1s ease-in-out;

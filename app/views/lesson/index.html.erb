@@ -1,4 +1,4 @@
-<div class="image-div2 h-100 mt-5" style="background-image: url('<%= cl_image_path "hexa-background_t6ki8r" %>')">
+<div class="image-div2 h-100" style="background-image: url('<%= cl_image_path "hexa-background_t6ki8r" %>')">
   <br>
   <br>
   <h1 class="text-center" data-aos="zoom-in" data-aos-duration="3000">Here are our Courses</h1>
@@ -10,11 +10,11 @@
   </div>
 </div>
 <%# ------ courses container------- %>
-<div class=" container"> 
+<div class=" container "> 
   <div class="row mt-5 ">
     <% @lesson.each do |s| %> 
-        <%= link_to lesson_path(s), class: "col-sm-6" do %>
-            <div class="card mb-5 ">
+        <%= link_to lesson_path(s), class: "col-sm-6 text-decoration-none" do %>
+            <div class="card mb-5 opacity">
               <%= cl_image_tag s.image.key, class: "card-img-top w-75 m-auto pt-5 lesson-img" %> 
               <div class="card-body">
                 <h5 class="card-title text-center text-dark "><%= s.title %></h5>
